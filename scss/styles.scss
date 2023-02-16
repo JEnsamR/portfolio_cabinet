@@ -570,6 +570,64 @@ footer {
         left: 303px;
     }
 }
+#experience-timeline2 {
+    margin: 30px auto 0 auto;
+    position: relative;
+    max-width: 1000px;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 303px;
+        right: auto;
+        height: 100%;
+        width: 3px;
+        background: $base-color;
+        z-index: 0;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 40px;
+        background: $base-color;
+        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        top: 100%;
+        left: 303px;
+    }
+}
+#experience-timeline3 {
+    margin: 30px auto 0 auto;
+    position: relative;
+    max-width: 1000px;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 303px;
+        right: auto;
+        height: 100%;
+        width: 3px;
+        background: $base-color;
+        z-index: 0;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 40px;
+        background: $base-color;
+        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        top: 100%;
+        left: 303px;
+    }
+}
 
 .vtimeline-content {
     margin-left: 350px;
@@ -911,6 +969,18 @@ footer {
 @media only screen and (max-width: 750px) {
 
     #experience-timeline {
+        &:before, &:after {
+            left: 23px;
+        }
+
+    }
+     #experience-timeline2 {
+        &:before, &:after {
+            left: 23px;
+        }
+
+    }
+     #experience-timeline3 {
         &:before, &:after {
             left: 23px;
         }
